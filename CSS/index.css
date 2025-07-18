@@ -1,0 +1,697 @@
+/* ---------------------------------------- */
+/* RESET & BASE STYLES */
+/* ---------------------------------------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* ---------------------------------------- */
+/* NAVBAR STYLES */
+/* ---------------------------------------- */
+
+/* Navbar Container - Oval Layout */
+.navbar-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+/* Main Navbar */
+.navbar {
+  background-color: white;
+  border-radius: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px 30px;
+  margin: 0 auto;
+  max-width: 1050px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.navbar-link:active,
+.navbar-link.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  font-weight: 600;
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  border: 2px solid transparent;
+}
+
+.contact-btn:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.contact-btn:active {
+  background-color: #000;
+  color: white;
+  border-color: #000;
+}
+
+/* ---------------------------------------- */
+/* SECTION LAYOUT STYLES */
+/* ---------------------------------------- */
+
+/* Section Containers */
+.homepage-section,
+.aboutpage-section,
+.productpage-section,
+.contactpage-section {
+  width: 100%;
+  height: 750px;
+  max-height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.homepage-section {
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+
+#home,
+#products {
+  background-color: #f8f9fa;
+}
+
+#about,
+#contact {
+  background-color: #e9ecef;
+}
+
+/* ---------------------------------------- */
+/* HOMEPAGE SECTION STYLES */
+/* ---------------------------------------- */
+
+.homepage-container {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -30px;
+}
+
+.homepage-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.homepage-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.homepage-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 0px;
+  line-height: 24px;
+}
+
+.carpreview-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.carpreview-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.carpreview-card:hover {
+  transform: scale(1.3);
+}
+
+.carpreview-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.carpreview-name {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ---------------------------------------- */
+/*  ABOUT US PAGE SECTION STYLE             */
+/* ---------------------------------------- */
+
+.aboutpage-section {
+  background-color: #ffffff;
+  width: 100%;
+  max-height: 750px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px 20px 40px;
+  box-sizing: border-box;
+}
+
+.about-container {
+  margin-top: -5px;
+  width: 100%;
+  max-width: 850px;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding: 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.about-description {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.faq-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.faq-answer {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------- */
+/*  PRODUCT PAGE SECTION STYLE              */
+/* ---------------------------------------- */
+
+.productpage-section {
+  padding: 100px 10px 20px;
+}
+
+/* ---------------------------------------- */
+/* VEHICLE CARD STYLES */
+/* ---------------------------------------- */
+
+.car-card {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 12px 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.car-card-bell {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.car-img {
+  height: 110px;
+}
+
+.car-brand {
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+.car-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  align-self: flex-start;
+}
+
+.car-type {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+.car-details {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  margin-bottom: 18px;
+  margin-top: -14px;
+  align-self: flex-start;
+}
+
+.car-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-top: -14px;
+  margin-bottom: -10px;
+  align-self: flex-start;
+}
+
+.cars-gallery {
+  margin-top: -10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ---------------------------------------- */
+/* VIEW DEAL BUTTON                         */
+/* ---------------------------------------- */
+
+.deal-btn {
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: stretch;
+  text-align: center;
+  border: 2px solid black;
+  margin-top: auto;
+}
+
+.deal-btn:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/* ---------------------------------------- */
+/*  CONTACTPAGE SECTION STYLE               */
+/* ---------------------------------------- */
+
+.contactpage-section {
+  background-color: #e9ecef;
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  margin-top: 58px;
+  max-width: 850px;
+  width: 100%;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.contact-header h2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: black;
+  margin: 12px auto 0;
+}
+
+.contact-header p {
+  color: #555;
+  font-size: 15px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 550px;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: black;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  width: 550px;
+}
+
+.contact-form button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact-info {
+  min-width: 176px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 60px;
+}
+
+.contact-info i {
+  color: black;
+  margin-right: 10px;
+  font-size: 19px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-info i:hover {
+  color: #555;
+  transform: scale(1.2);
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: gray;
+}
+
+/* ---------------------------------------- */
+/* RESPONSIVE STYLES                        */
+/* ---------------------------------------- */
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+
+  .navbar-links {
+    gap: 30px;
+  }
+
+  .cars-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-info {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .homepage-title {
+    font-size: 28px;
+  }
+
+  .homepage-description {
+    font-size: 14px;
+  }
+
+  .carpreview-container {
+    gap: 20px;
+  }
+
+  .cars-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .car-card {
+    height: auto;
+    padding: 16px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .faq-section {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .navbar-link {
+    font-size: 15px;
+  }
+
+  .contact-header h2 {
+    font-size: 26px;
+  }
+
+  .homepage-title {
+    font-size: 22px;
+  }
+
+  .carpreview-card {
+    width: 100%;
+    transform: scale(1) !important;
+  }
+
+  .carpreview-card:hover {
+    transform: none;
+  }
+}
+

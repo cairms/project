@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Jollibee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+  <!-- Fullscreen Intro Video -->
+  <video id="intro-video" autoplay muted playsinline onended="showLogin()">
+    <source src="images/login-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Skip Intro Button -->
+  <button id="skip-btn" onclick="showLogin()">Skip Intro</button>
+
+  <!-- Login Box -->
+  <div class="login-box" id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="login-message"></p>
+  </div>
+
+  <script src="JS/login.js"></script>
+
+</body>
+</html>
+
